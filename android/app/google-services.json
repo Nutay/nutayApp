@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "592601434442",
+    "firebase_url": "https://nutay-e87ea.firebaseio.com",
+    "project_id": "nutay-e87ea",
+    "storage_bucket": "nutay-e87ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592601434442:android:f3aac9a769f758e01659b3",
+        "android_client_info": {
+          "package_name": "com.Nutay.nutay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592601434442-eak06j9i0o0475bqcenlpvuth1mqdvu9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqW_WStXaYk2pDaCNeDcfwTXBU9LNwlWY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592601434442-eak06j9i0o0475bqcenlpvuth1mqdvu9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
