@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:nutay/components/macroField.dart';
+import 'package:nutay/components/MyDrawer.dart';
 import 'package:nutay/screens/loginScreen.dart';
 import 'package:nutay/screens/registerScreen.dart';
 
@@ -16,16 +17,17 @@ class _MacronutrientsScreenState extends State<MacronutrientsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'Nutay',
-          style: TextStyle(
-            color: Color(0xffC4D9BA),
+          title: const Text(
+            'Nutay',
+            style: TextStyle(
+              color: Color(0xffC4D9BA),
+            ),
           ),
-        ),
-        centerTitle: true,
-        backgroundColor: Colors.white,
-      ),
+          centerTitle: true,
+          backgroundColor: Colors.white,
+          iconTheme: IconThemeData(color: Color(0xffC4D9BA))),
       backgroundColor: Colors.white,
+      drawer: MyDrawer(),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
