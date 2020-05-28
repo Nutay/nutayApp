@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:nutay/screens/startScreen.dart';
 import 'package:nutay/screens/loginScreen.dart';
+import 'package:nutay/components/dataContainer.dart';
 
 class PatientsScreen extends StatefulWidget {
   static const String id = 'patientsScreen';
@@ -417,60 +418,12 @@ class _PatientsScreenState extends State<PatientsScreen> {
                     ),
                     Row(
                       children: <Widget>[
-                        Container(
-                          alignment: Alignment.center,
-                          width: 120.0,
-                          height: 60.0,
-                          color: Colors.white,
-                          margin: EdgeInsets.only(
-                              top: 0, right: 4, left: 4, bottom: 0),
-                          child: Text("${IMC[0]}"),
-                        ),
-                        Container(
-                          alignment: Alignment.center,
-                          width: 120.0,
-                          height: 60.0,
-                          color: Colors.white,
-                          margin: EdgeInsets.only(
-                              top: 0, right: 4, left: 4, bottom: 0),
-                          child: Text("${weight[0]}"),
-                        ),
-                        Container(
-                          alignment: Alignment.center,
-                          width: 120.0,
-                          height: 60.0,
-                          color: Colors.white,
-                          margin: EdgeInsets.only(
-                              top: 0, right: 4, left: 4, bottom: 0),
-                          child: Text("${height[0]}"),
-                        ),
-                        Container(
-                          alignment: Alignment.center,
-                          width: 120.0,
-                          height: 60.0,
-                          color: Colors.white,
-                          margin: EdgeInsets.only(
-                              top: 0, right: 4, left: 4, bottom: 0),
-                          child: Text("${age[0]}"),
-                        ),
-                        Container(
-                          alignment: Alignment.center,
-                          width: 120.0,
-                          height: 60.0,
-                          color: Colors.white,
-                          margin: EdgeInsets.only(
-                              top: 0, right: 4, left: 4, bottom: 0),
-                          child: Text("${sex[0]}"),
-                        ),
-                        Container(
-                          alignment: Alignment.center,
-                          width: 120.0,
-                          height: 60.0,
-                          color: Colors.white,
-                          margin: EdgeInsets.only(
-                              top: 0, right: 4, left: 4, bottom: 0),
-                          child: Text("${assesment[0]}"),
-                        ),
+                        dataContainer(data: IMC),
+                        dataContainer(data: weight),
+                        dataContainer(data: height),
+                        dataContainer(data: age),
+                        dataContainer(data: sex),
+                        dataContainer(data: assesment),
                         Container(
                           alignment: Alignment.center,
                           width: 120.0,
